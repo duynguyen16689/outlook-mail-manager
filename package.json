@@ -1,0 +1,33 @@
+{
+  "name": "outlook-mail-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Outlook & Hotmail OAuth2 Mail Manager (Microsoft Graph API + IMAP XOAUTH2 + 24h Auto-Forward Scheduler)",
+  "scripts": {
+    "dev": "next dev -p 3006",
+    "build": "prisma generate && next build",
+    "start": "next start -p 3006",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "imapflow": "^2.10.0",
+    "lucide-react": "^0.475.0",
+    "mailparser": "^3.14.1",
+    "next": "^15.2.0",
+    "puppeteer-core": "^24.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "postcss": "^8.5.0",
+    "prisma": "^6.5.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.8.2"
+  }
+}
